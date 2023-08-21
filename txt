@@ -1,0 +1,15 @@
+This code performs the following steps:
+
+Loads the web tracking events data from a CSV file into a pandas DataFrame (assuming the file is named 'web_tracking_events.csv').
+
+Filters the DataFrame to include only successful trace events where the status is 200.
+
+Extracts the utm_source information from the 'url' column using regular expressions and creates a new 'utm_source' column.
+
+Replaces null or empty utm_source values with "unknown".
+
+Filters the DataFrame to include only rows where the 'page_type' is 'pageimpression', and then calculates the top 5 utm_source values by count.
+
+Finally, it prints the top 5 utm_source values based on the count of 'page_type=pageimpression'.
+
+Make sure to replace 'web_tracking_events.csv' with the actual file path to your CSV file containing web tracking events data.
