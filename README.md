@@ -1,8 +1,8 @@
 # Analyze-Web-Tracking-Events
 
-Challenge Overview:
-This challenge is to analyze web tracking events data to track the effectiveness of
-online marketing campaigns
+**Challenge Overview: This challenge is to analyze web tracking events data to track the effectiveness of
+online marketing campaigns**
+
 Write a program that processes the web tracking events to achieve the following:
 1. Filter for only successful trace events
 a) Only filter where status is 200
@@ -17,7 +17,7 @@ a) As said, replace if empty or null
 a) First filter for “pageimpression” from the page_type column
 b) Then select the top 5 utm_source (For e.g. bing, google, etc) by count
 
-Challenge 2: Design a consistent Join
+**Challenge 2: Design a consistent Join using Spark**
 
 Assume the following scenario:
 1. You have individual user events in a table you provide to customers
@@ -29,7 +29,7 @@ the next
 5. You already built a second aggregated table you use to identify bots vs. users (bot_lookup)
 6. This lookup stores user_identifiers by date and an inferred bot_status
 
-Challenge 3: Analyze a buffer sequence
+**Challenge 3: Analyze a buffer sequence**
 In the example:
 1. the first chunk has 3 items and a total of 6000
 2. the second chunk has 1 item and a total of 4000
